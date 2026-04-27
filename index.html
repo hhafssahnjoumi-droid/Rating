@@ -2,78 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel ="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="stayels/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/script.js" defer></script>
 
-  
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Interactive rating component</title>
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <!-- Rating state -->
+  <div class="card" id="rating-card">
+    <img src="images/icon-star.svg" alt="star">
 
-<div class="card" id="rating-card">
-  <img src="images/icon-star.svg" alt="star">
+    <h2>How did we do?</h2>
+    <p>
+      Please let us know how we did with your support request.
+      All feedback is appreciated to help us improve our offering!
+    </p>
 
-  <h2>How did we do?</h2>
-  <p>
-    Please let us know how we did with your support request.
-  </p>
+    <div class="ratings">
+      <button class="rate">1</button>
+      <button class="rate">2</button>
+      <button class="rate">3</button>
+      <button class="rate">4</button>
+      <button class="rate">5</button>
+    </div>
 
-  <div class="ratings">
-    <button class="rate">1</button>
-    <button class="rate">2</button>
-    <button class="rate">3</button>
-    <button class="rate">4</button>
-    <button class="rate">5</button>
+    <button id="submit">SUBMIT</button>
   </div>
 
-  <button id="submit">SUBMIT</button>
-</div>
+  <!-- Thank you state -->
+  <div class="card hidden" id="thank-you">
+    <img src="images/illustration-thank-you.svg" alt="thank you">
 
-<!-- Thank you state -->
-<div class="card hidden" id="thank-you">
-  <img src="images/illustration-thank-you.svg" alt="thank you">
+    <p id="result"></p>
 
-  <p id="result"></p>
-  <h2>Thank you!</h2>
-  <p>We appreciate your feedback.</p>
-</div>
-  How did we do?
+    <h2>Thank you!</h2>
+    <p>
+      We appreciate you taking the time to give a rating.
+      If you ever need more support, don’t hesitate to get in touch!
+    </p>
+  </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by 
+    <a href="https://www.frontendmentor.io">Frontend Mentor</a>.
+    Coded by You
   </footer>
+
 </body>
 </html>
